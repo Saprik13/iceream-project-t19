@@ -1,0 +1,17 @@
+@mixin button($color, $font-size, $font-weight, $btn-bg) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 22px;
+  border: transparent;
+  transition: background-color 250ms var(--timing-function);
+  line-height: 1.3;
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  background-color: $btn-bg;
+}
