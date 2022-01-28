@@ -30,7 +30,7 @@
   color: var(--second-color);
   margin-bottom: 15px;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (min-width: 768px) and (max-width: $tablet) {
     font-size: 26px;
     line-height: 1.15;
   }
