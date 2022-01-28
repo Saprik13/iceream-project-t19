@@ -1,7 +1,9 @@
-.section,
-.hero {
+.section {
   padding: 90px 0;
 
+  @media screen and (min-width: $desktop) {
+    padding: 110px 0;
+  }
 
   &--no-padding-top {
     padding-top: 0px;
@@ -10,6 +12,10 @@
   &--other-bcg {
     background-color: #FFF5F6;
   }
+}
+
+.hero {
+  padding: 90px 0;
 
   @media screen and (min-width: $desktop) {
     padding: 110px 0;
