@@ -8,17 +8,16 @@
   color: var(--main-color);
   margin-bottom: 31px;
 
-
-  @media screen and (max-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     font-size: 48px;
-    margin-bottom: 39px
+    margin-bottom: 39px;
   }
 
   @media screen and (min-width: $desktop) {
     font-size: 58px;
     line-height: 1.13;
     letter-spacing: 0.06em;
-    margin-bottom: 49px
+    margin-bottom: 49px;
   }
 }
 
@@ -30,7 +29,6 @@
   line-height: 1.16;
   color: var(--second-color);
   margin-bottom: 15px;
-
 
   @media screen and (max-width: $tablet) {
     font-size: 26px;
