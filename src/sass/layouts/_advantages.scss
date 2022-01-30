@@ -1,4 +1,4 @@
-.advantages-list {
+.advantages {
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
@@ -6,12 +6,12 @@
   }
 }
 
-.advantages-list__item:not(:last-child) {
+.advantages__item:not(:last-child) {
   @media screen and (max-width: $mobile) {
     margin-bottom: 38px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: $tablet) {
     margin-right: 60px;
   }
 
@@ -20,10 +20,10 @@
   }
 }
 
-.advantages-list__item {
+.advantages__item {
   width: 230px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: $tablet) {
     width: 180px;
   }
 
@@ -32,33 +32,10 @@
   }
 }
 
-.advantages-list__numbers {
+.advantages__item::before {
   margin-bottom: 16px;
 
-  font-family: var(--secondary-font);
-  font-size: 36px;
-  line-height: 1.14;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--main-color);
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 13px;
-
-    font-size: 48px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 15px;
-
-    font-size: 58px;
-  }
-}
-
-.advantages-list__item::before {
-  margin-bottom: 16px;
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: $tablet) {
     margin-bottom: 36px;
   }
 
@@ -67,7 +44,7 @@
   }
 }
 
-.advantages-list__item:nth-child(1)::before {
+.advantages__item:nth-child(1)::before {
   content: '';
   display: block;
   // width: 33px;
@@ -81,7 +58,7 @@
   }
 }
 
-.advantages-list__item:nth-child(2)::before {
+.advantages__item:nth-child(2)::before {
   content: '';
   display: block;
   // width: 33px;
@@ -95,7 +72,7 @@
   }
 }
 
-.advantages-list__item:nth-child(3)::before {
+.advantages__item:nth-child(3)::before {
   content: '';
   display: block;
   // width: 33px;
@@ -109,14 +86,37 @@
   }
 }
 
-.advantages-list__info {
+.advantages__title {
+  margin-bottom: 16px;
+
+  font-family: var(--secondary-font);
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--main-color);
+
+  @media screen and (min-width: 768px) and (max-width: $tablet) {
+    margin-bottom: 13px;
+
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
+
+    font-size: 58px;
+  }
+}
+
+.advantages__text {
   font-family: var(--primary-font);
   font-weight: 700;
   font-size: 12px;
   line-height: 1.7;
   color: var(--primary-text);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: $tablet) {
     font-size: 14px;
     line-height: 1.74;
   }
