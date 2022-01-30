@@ -1,2 +1,21 @@
-<article class="example">
-  <h1>HTML-фрагменты</h1>
+<section class="gallery-section">
+  <div class="container">
+    <div class="gallery-thumb">
+      <picture>
+        <source
+        media="(min-width: 1200px)"
+        srcset="./images/desktop/gallery_dt_jpg_1280@1x.jpg 1x,
+                ./images/desktop/gallery_dt_jpg_1280@2x.jpg 2x" />
+        <source
+        media="(min-width: 768px)"
+        srcset="./images/tablet/gallery_tab_jpg_786@1x.jpg 1x,
+                ./images/tablet/gallery_tab_jpg_786@2x.jpg 2x" />
+        <source
+        media="(min-width: 320px)"
+        srcset="./images/mobile/gallery_mob_jpg_364@1x.jpg 1x,
+                ./images/mobile/gallery_mob_jpg_364@2x.jpg 2x" />
+        <img src="#" alt="група фото" />                           
+      </picture>
+    </div>
+  </div>
+</section>
