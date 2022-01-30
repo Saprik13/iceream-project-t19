@@ -1,9 +1,160 @@
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
+.section-about {
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/mobile/milk_bcg_mob_png_320@1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 83% 83%;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/milk_bcg_mob_png_320@2x.png);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/desktop/milk_bcg_dt_png_1282@1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 88% 88%;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/milk_bcg_dt_png_1282@2x.png);
+    }
+  }
 }
+
+.section-about__title {
+  width: 200px;
+  margin-bottom: 26px;
+  margin-right: auto;
+  margin-left: auto;
+  letter-spacing: 0.04em;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    letter-spacing: 0.06em;
+    margin-bottom: 55px;
+  }
+}
+
+.about {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.about__pic {
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 17px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 74px;
+  }
+}
+
+.about__text-wrap {
+  @media screen and (max-width: 768px) {
+    width: 220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.description--black {
+  width: 220px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 46px;
+  margin-bottom: 35px;
+
+  // font-weight: 500;
+  // font-size: 12px;
+  line-height: 1.62;
+  color: var(--primary-text);
+
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    margin-top: 50px;
+
+    font-size: 14px;
+    line-height: 1.76;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 463px;
+    margin-top: 60px;
+
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.description--grey {
+  width: 220px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 17px;
+
+  // font-weight: 500;
+  // font-size: 12px;
+  line-height: 1.62;
+
+  color: var(--secondary-text);
+
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    margin-bottom: 62px;
+
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 45px;
+    width: 463px;
+    line-height: 1.94;
+  }
+}
+
+.about__button {
+  @include button(var(--main-color), 14px, bold, #fff);
+  width: 176px;
+  height: 44px;
+
+  @media screen and (max-width: 767px) {
+    margin: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: #d41443;
+    background-color: #ecebeb;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+.about__button-icon {
+  margin-left: 13px;
+}
+
+// .section-about__button-block {
+//   @media screen and (max-width: 767px) {
+//     width: 220px;
+//     margin: 0 auto;
+//   }
+// }

@@ -1,9 +1,53 @@
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
+.rev-slider__slide{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slide__item:not(:last-child){
+  margin-bottom: 15px;
+}
+.slide__text-box{
+  background-color: #FAFAFA;
+  padding: 32px 50px;
+  width: 926px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.slide__text{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #000000;
+  position: relative;
+  margin: 15px 36px;
+}
+.slide__name{
+font-weight: 500;
+font-size: 20px;
+line-height: 186%;
+text-align: center;
+color: #000000;
+margin-top: 34px;
+}
+.slide__icon{
+  fill: #E1E1E1;
+  position: absolute;
+}
+.slide__image{
+  border-radius: 50%;
+}
+.slide___points{
+  display: flex;
+}
+.points__item{
+  background-color: #C7133E;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+    &:not(:last-child){
+      margin-right: 10px;
+    }
 }
