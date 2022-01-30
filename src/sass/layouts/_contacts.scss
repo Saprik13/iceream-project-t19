@@ -8,16 +8,47 @@
 //   padding: 16px;
 // }
 
+// секция
 .contacts-section {
-  background-color: #fff5f6;
+  position: relative;
 }
 
+// фон
+.contacts__background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 174px;
+  height: calc(100% - 174px);
+  @media screen and (min-width: 768px) {
+    top: 178px;
+    height: calc(100% - 178px);
+  }
+  @media screen and (min-width: 1280px) {
+    top: 202px;
+    height: calc(100% - 202px);
+  }
+  background: linear-gradient(#fff5f6, #fff5f6);
+}
+
+// список контактов
 .contacts {
   display: block;
   margin-bottom: 40px;
-  // @media screen and (min-width: 768px) {
-  //   display: flex;
-  // }
+  font-size: 12px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 
 .contacts__list {
@@ -31,8 +62,21 @@
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 50px 30px;
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 330px;
+    padding: 50px 43px;
+  }
 }
 
+// миксин для стилей типа заведения
 @mixin contacts-building($width, $height, $back-color, $fontsize, $border) {
   display: flex;
   align-items: center;
@@ -50,6 +94,7 @@
   letter-spacing: 0.04em;
 }
 
+// тип заведения
 .contacts__building--first {
   @include contacts-building(80px, 16px, #f0d1a5, 12px, 4px);
   margin-bottom: 25px;
@@ -62,8 +107,10 @@
   }
 }
 
+// тип заведения
 .contacts__building--second {
   @include contacts-building(130px, 16px, #c2e297, 12px, 4px);
+  margin-bottom: 25px;
   @media screen and (min-width: 768px) {
     @include contacts-building(138px, 28px, #c2e297, 16px, 6px);
     margin-bottom: 30px;
@@ -73,29 +120,41 @@
   }
 }
 
+// заголовок контактов
 .concacts__header {
   font-family: DM Sans;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 186%;
+  font-size: inherit;
+  line-height: 1.86;
   letter-spacing: 0.04em;
   color: #000000;
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 14px;
+  }
 }
 
+// текст под заголовком
 .contacts__text {
   position: relative;
   font-family: DM Sans;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 166%;
+  font-size: inherit;
+  line-height: 1.5;
   color: #907e82;
   margin-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
 }
 
+// список с временем работы
 .contacts-work {
   position: relative;
   margin-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
 }
 
 .contacts-work__list {
@@ -104,21 +163,32 @@
   }
 }
 
+// подчёркивание
 .contacts__text::after,
 .contacts-work::after {
   content: '';
   position: absolute;
   bottom: -25px;
+  @media screen and (min-width: 768px) {
+    bottom: -30px;
+  }
   left: 0;
-  width: 157px;
-  border: 1px solid #e1e1e1;
+  width: 179px;
+  @media screen and (min-width: 768px) {
+    width: 157px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 234px;
+  }
+  border-bottom: 1px solid #e1e1e1;
 }
 
+// время работы
 .contacts-work__day,
 .contacts-work__time {
   font-family: DM Sans;
   font-weight: 500;
-  font-size: 12px;
+  font-size: inherit;
   line-height: 186%;
 }
 
@@ -133,12 +203,15 @@
 // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 //   background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+// способ связи с нами
 .contacts__contacts {
   font-family: DM Sans;
-  font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: inherit;
+  line-height: 1.5;
+  @media screen and (min-width: 768px) {
+    line-height: 1.83;
+  }
   color: #907e82;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -148,14 +221,58 @@
   }
 }
 
+// список кнопок
+.contacts__button-list {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 14px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
+
+// позиционирование кнопок
+.contacts__button--ul {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// кнопки контактов
 .contacts__button {
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  width: 161px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    width: 161px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
   height: 44px;
   border: none;
   border-radius: 22px;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
   color: #d41443;
   background-color: #fff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -167,6 +284,15 @@
   }
 }
 
-.contacts__button-list:not(:last-child) {
-  margin-bottom: 10px;
+// иконка в кнопке
+.contacts__button--arrow {
+  margin-left: 8px;
+  width: 6px;
+  height: 10px;
+  fill: #d41443;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: #fff;
+  }
 }
