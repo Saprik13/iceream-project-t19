@@ -3,7 +3,7 @@ new Swiper('.image-slider', {
     // пагинация
     pagination: {
         el: '.swiper-pagination',
-        // буллеты
+        type: 'bullets',
         clickable: true,
-    },    
+    },
 });
