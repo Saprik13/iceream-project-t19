@@ -1,0 +1,17 @@
+// миксин для стилей типа заведения
+@mixin contacts-building($width, $height, $back-color, $fontsize, $border) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  width: $width;
+  height: $height;
+  border-radius: $border;
+  color: #fff;
+  background-color: $back-color;
+  // font-family: DM Sans;
+  font-weight: 500;
+  font-size: $fontsize;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+}
