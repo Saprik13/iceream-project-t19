@@ -150,6 +150,12 @@
 
 .about__button-icon {
   margin-left: 13px;
+  fill: var(--main-color);
+
+  &:hover,
+  &:focus {
+    fill: #d41443;
+  }
 }
 
 // .section-about__button-block {
