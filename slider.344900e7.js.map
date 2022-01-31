@@ -1,1 +1,0 @@
-{"version":3,"sources":["js/slider.js"],"names":["Swiper"],"mappings":";AAAA,IAAIA,OAAO","file":"slider.344900e7.js","sourceRoot":"../src","sourcesContent":["new Swiper('.image-slider');\n"]}
