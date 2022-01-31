@@ -4,13 +4,13 @@
         display: flex;
         flex-wrap: wrap;
         margin: -10px;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 14px;
+        padding-right: 14px;
     }
     @media screen and (min-width: 1280px) {
         margin: -15px;
-        padding-left: 106px;
-        padding-right: 106px;
+        padding-left: 96px;
+        padding-right: 96px;
     }
 }
 
@@ -220,6 +220,7 @@
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    background-color: #fff
 }
 
 .products__btn--icon {
