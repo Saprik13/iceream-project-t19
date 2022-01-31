@@ -9,7 +9,11 @@
 // }
 
 // секция
-.contacts__container {
+// .contacts__container {
+//   // position: relative;
+// }
+
+.contacts__section {
   position: relative;
 }
 
@@ -17,7 +21,8 @@
 .contacts__background {
   position: absolute;
   z-index: -1;
-  width: 100%;
+  width: 100vw;
+  left: 0;
   top: 174px;
   height: calc(100% - 64px);
 
@@ -51,8 +56,8 @@
 
   @media screen and (min-width: 1280px) {
     font-size: 16px;
-    margin-left: 105px;
-    margin-right: 105px;
+    margin-left: 95px;
+    margin-right: 95px;
     margin-bottom: 85px;
   }
 }
