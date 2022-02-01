@@ -17,7 +17,7 @@
 .slide__text-box {
   position: relative;
   max-width: 926px;
-  padding: 47px 89px 39px 87px;
+  padding: 45px 85px;
   background: #FAFAFA;
   margin-bottom: 15px;
 }
@@ -27,6 +27,7 @@
   top: 32px;
   left: 50px;
   fill: #E1E1E1;
+  z-index: 2;
 }
 
 .slide__text {
@@ -37,6 +38,8 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: #000000;
+  z-index: 3;
+  background-image: -webkit-repeating-linear-gradient(top, transparent 0px, transparent 28px, #E1E1E1 28px, transparent 29px);
 }
 
 .slide__dots {
