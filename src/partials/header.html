@@ -1,2 +1,67 @@
-<article class="example">
-  <h1>HTML-фрагменты</h1>
+<header class="header">
+  <div class="header__container container">
+    <nav class="header__nav">
+      <a class="header__logo" href="/">
+        <img src="../src/images/logo@1x.png" alt="site logo" />
+      </a>
+      <ul class="site-nav">
+        <li class="site-nav__item">
+          <a class="site-nav__link site-nav--current" href="#home">Home</a>
+        </li>
+        <li class="site-nav__item"><a class="site-nav__link" href="#about-us">About us</a></li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#how-its-made?">How it’s made?</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#our-products">Our products</a>
+        </li>
+        <li class="site-nav__item"><a class="site-nav__link" href="#contacts">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="burger-btn" data-menu-open>
+      <svg class="burger-btn__icon">
+        <use href="../src/images/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <button class="header__btn" type="button">
+      Buy now
+      <svg class="header__btn-icon">
+        <use href="../src/images/icons.svg#icon-arrow"></use>
+      </svg>
+    </button>
+
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu__container">
+        <button class="mobile-menu__close-btn" data-menu-close>
+          <svg class="close-btn__icon">
+            <use href="../src/images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <button class="header-mobile__btn" type="button">
+          Buy now
+          <svg class="header-mobile__btn-icon">
+            <use href="../src/images/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link mobile-nav--current" href="#home">Home</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#about-us">About us</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#how-its-made?">How it’s made?</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#our-products">Our products</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#contacts">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

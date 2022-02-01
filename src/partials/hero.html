@@ -1,2 +1,72 @@
-<article class="example">
-  <h1>HTML-фрагменты</h1>
+<section class="hero">
+  <div class="container hero__container">
+    <div class="hero__position">
+      <h1 class="hero__title">ice cream made with <p class="hero__title--reverse">passion</p>
+      </h1>
+      <ul class="hero-achievements">
+        <li class="hero-achievements__item">
+          <p class="hero-achievements__number">16</p>
+          <p class="hero-achievements__text">cafes</p>
+          <div class="hero__small-circle"></div>
+        </li>
+        <li class="hero-achievements__item">
+          <p class="hero-achievements__number">23</p>
+          <p class="hero-achievements__text">food trucks</p>
+          <div class="hero__small-circle"></div>
+        </li>
+      </ul>
+    </div>
+    <ul class="hero-button">
+      <li>
+        <form action="#our-products">
+          <button class="hero-btn__item">Products
+          </button>
+        </form>
+      </li>
+      <li>
+        <form action="#how-its-made?">
+          <button class="hero-btn__item hero-btn--reverse">How it’s made?
+          </button>
+        </form>
+      </li>
+    </ul>
+
+    <div class="hero-road-to-milk">
+      <picture class="hero-road-to-milk__logo">
+        <source media="(min-width: 1280px)"
+          srcset="../src/images/desktop/hero_milk_dt_188@1x.png 1x, ../src/images/desktop/hero_milk_dt_188@2x.png 2x">
+        <source media="(min-width: 768px)"
+          srcset="../src/images/tablet/hero_milk_tab_124@1x.png 1x, ../src/images/tablet/hero_milk_tab_124@2x.png 2x">
+        <img src="../src/images/desktop/hero_milk_dt_188@1x.png" alt="jug of milk" />
+      </picture>
+      <div>
+        <p class="hero-road-to-milk__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et</p>
+        <a class="hero-road-to-milk__link" href="#how-its-made?">
+          <svg class="hero__icon-arrow">
+            <use href="../src/images/icons.svg#icon-arrow-right"></use>
+          </svg>
+
+      </div>
+      </a>
+    </div>
+
+    <picture class="hero__ice-logo">
+      <source media="(min-width: 1280px)"
+        srcset="../src/images/desktop/hero_dt_236@1x.png 1x, ../src/images/desktop/hero_dt_236@2x.png 2x">
+      <source media="(min-width: 768px)"
+        srcset="../src/images/tablet/hero_tab_143@1x.png 1x, ../src/images/tablet/hero_tab_143@2x.png 2x">
+      <source media="(min-width: 320px)"
+        srcset="../src/images/mobile/hero_mob_171@1x.png 1x, ../src/images/mobile/hero_mob_171@2x.png 2x">
+      <img src="../src/images/desktop/hero_dt_236@1x.png" alt="ice cream" />
+    </picture>
+    <picture class="hero__girl-logo">
+      <source media="(min-width: 1280px)"
+        srcset="../src/images/desktop/hero_girl_dt_293@1x.png 1x, ../src/images/desktop/hero_girl_dt_293@2x.png 2x">
+      <source media="(min-width: 768px)"
+        srcset="../src/images/tablet/hero_girl_tab_168@1x.png 1x, ../src/images/tablet/hero_girl_tab_168@2x.png 2x">
+      <img src="../src/images/desktop/hero_girl_dt_293@1x.png" alt="girl eating ice cream" />
+    </picture>
+    <div class="hero__big-circle"></div>
+  </div>
+</section>

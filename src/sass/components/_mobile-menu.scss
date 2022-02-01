@@ -1,3 +1,125 @@
-.menu {
+.mobile-menu {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: translateX(110vw);
+  transition: transform 1.5s ease-in-out;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
+  transition: transform 1.5s ease-in-out;
+}
+
+.mobile-menu__container {
+  width: 254px;
+  margin-right: 0;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 171px;
+  height: 100vh;
+  min-height: 502px;
+  background-color: #e17992;
+
+  @media screen and (min-width: 768px) {
+    width: 254px;
+    min-height: 1020px;
+  }
+}
+
+.burger-btn {
+  z-index: 2;
+
+  border: none;
+  padding: 0;
+  line-height: 0;
+  background-color: transparent;
+
+  &__icon {
+    width: 20px;
+    height: 12px;
+    fill: var(--main-color);
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 52px;
+      right: 224px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+}
+
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+
+  padding: 0;
+  line-height: 0;
+  fill: #ffffff;
+  border: none;
+  background-color: transparent;
+}
+
+.close-btn__icon {
+  width: 14px;
+  height: 14px;
+}
+
+.header-mobile__btn {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding: 15.5px 48.64px 13.5px 48.64px;
+  height: 44px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--main-color);
+
+  background-color: #ffffff;
+  border-color: transparent;
+  border-radius: 22px;
+}
+
+.header-mobile__btn-icon {
+  width: 8px;
+  height: 10px;
+  margin-left: 27px;
+
+  fill: var(--main-color);
+}
+
+.mobile-nav__item {
+  padding-top: 13px;
+  padding-bottom: 11px;
+  padding-left: 21px;
+  border: 1px solid #e18298;
+}
+
+.mobile-nav__link {
+  font-weight: 700;
   font-size: 14px;
+  line-height: 1.28;
+  color: #ffffff;
+}
+
+.mobile-nav--current {
+  color: var(--main-color);
 }
