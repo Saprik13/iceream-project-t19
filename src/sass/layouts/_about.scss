@@ -202,7 +202,11 @@
   @media screen and (max-width: 767px) {
     padding: 40px;
     max-width: 450px;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms var(--timing-funcion);
   }
 
   @media screen and (min-width: 768px) {
@@ -217,7 +221,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 528px;
+    max-width: 528px;
   }
 }
 
