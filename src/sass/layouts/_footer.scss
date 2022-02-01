@@ -10,6 +10,10 @@
     align-items: baseline;
     justify-content: space-between;
   }
+
+  @media screen and (min-width: $desktop) {
+    padding: 0 115px;
+  }
 }
 
 .footer__text-wrapper {
