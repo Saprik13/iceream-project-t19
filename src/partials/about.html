@@ -31,12 +31,33 @@
           Aliquam erat volutpat. Aenean accumsan.
         </p>
       
-        <button type="button" class="about__button">Read more
+        <button type="button" class="about__button" data-modal-open>Read more
           <svg class="about__button-icon" width="10px" height="15px">
             <use href="/images/icons.svg#icon-arrow"></use>
           </svg>
         </button>
 
+        <div class="about__backdrop about__backdrop--is-hidden" data-modal>
+          <div class="about__modal about__modal--open section--other-bcg">
+            <button class="about__close-button" data-modal-close>
+              <svg class="about__close-button-logo" width="25px" height="25px">
+                <use href="/images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div>
+              <h3 class="advantages__title about__modal-title">The highest quality</h3>
+              <h4 class="description description--black about__modal-text">Eco product</h4>
+              <p class="description description--grey about__modal-description">The farm produces dairy products such as milk, kefir of various fats, sour cream and fermented milk every day, and plans
+              to launch yogurt, butter, soft cheeses, etc. soon. The production process on the farm meets the requirements of
+              international standards of the food safety management system DSTU ISO 22000</p>
+              <h4 class="description description--black about__modal-text">Nutrients</h4>
+              <p class="description description--grey about__modal-description">Vitamins A, B, B2, C, minerals, easily digestible proteins, fats and carbohydrates.</p>
+              <h4 class="description description--black about__modal-text">Protected production cycle</h4>
+              <p class="description description--grey about__modal-description">Milk from healthy cows, selected breeds that eat ecologically clean and natural products in the usual habitats. All
+              animals are under the supervision of specialists and veterinarians throughout the milk production cycle. Production is
+              based on the use of ecological methods of milking in an ecologically clean region.</p>
+              
+            </div>
       </div>
 
     </div>
