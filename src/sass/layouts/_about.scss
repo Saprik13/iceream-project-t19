@@ -1,4 +1,7 @@
 .section-about {
+  max-width: 2000px;
+  margin-right: auto;
+  margin-left: auto;
   @media screen and (max-width: 767px) {
     background-image: url(../images/mobile/milk_bcg_mob_png_320@1x.png);
     background-repeat: no-repeat;
