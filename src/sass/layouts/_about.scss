@@ -75,8 +75,6 @@
   margin-top: 46px;
   margin-bottom: 35px;
 
-  // font-weight: 500;
-  // font-size: 12px;
   line-height: 1.62;
   color: var(--primary-text);
 
@@ -103,8 +101,6 @@
   margin-left: auto;
   margin-bottom: 17px;
 
-  // font-weight: 500;
-  // font-size: 12px;
   line-height: 1.62;
 
   color: var(--secondary-text);
@@ -158,9 +154,114 @@
   }
 }
 
-// .section-about__button-block {
-//   @media screen and (max-width: 767px) {
-//     width: 220px;
-//     margin: 0 auto;
-//   }
-// }
+.about__backdrop {
+  overflow-y: scroll;
+  padding: 20px;
+
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 94px 15px;
+
+    &--is-hidden {
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms var(--timing-funcion), visibility 250ms var(--timing-funcion);
+
+    &--is-hidden {
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}
+
+.about__modal {
+  z-index: 9999;
+
+  @media screen and (max-width: 767px) {
+    padding: 40px;
+    max-width: 450px;
+    position: relative;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 528px;
+    width: 100%;
+    padding: 40px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms var(--timing-funcion);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+}
+
+.about__backdrop--is-hidden .about__modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.about__close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: transparent;
+}
+
+.about__close-button-logo {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: inline-flex;
+  fill: var(--main-color);
+
+  &:hover,
+  &:focus {
+    fill: #d41443;
+  }
+
+  .about__close-button:focus-within > & {
+    fill: #d41443;
+  }
+}
+
+.about__modal-title {
+  text-align: center;
+}
+
+.about__modal-text {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.about__modal-description:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.about__modal--open {
+  overflow: hidden;
+}
