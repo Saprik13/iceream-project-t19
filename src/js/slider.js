@@ -5,5 +5,11 @@ new Swiper('.image-slider', {
         el: '.swiper-pagination',
         type: 'bullets',
         clickable: true,
+        infinity: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        pauseOnFocus: true,
+        pauseOnDotsHover: true,
     },
 });
