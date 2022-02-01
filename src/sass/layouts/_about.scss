@@ -9,9 +9,7 @@
     background-size: contain;
     background-position: 83% 83%;
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/mobile/milk_bcg_mob_png_320@2x.png);
     }
   }
@@ -22,9 +20,7 @@
     background-size: contain;
     background-position: 88% 88%;
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/desktop/milk_bcg_dt_png_1282@2x.png);
     }
   }
@@ -80,7 +76,7 @@
   width: 220px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 46px;
+  padding: 46px 0 0 0;
   margin-bottom: 35px;
 
   line-height: 1.62;
@@ -88,7 +84,7 @@
 
   @media screen and (min-width: 768px) {
     width: 340px;
-    margin-top: 50px;
+    padding: 50px 0 0 0;
 
     font-size: 14px;
     line-height: 1.76;
@@ -96,7 +92,7 @@
 
   @media screen and (min-width: $desktop) {
     width: 463px;
-    margin-top: 60px;
+    padding: 60px 0 0 0;
 
     font-size: 16px;
     letter-spacing: 0.04em;
