@@ -114,7 +114,9 @@
   @media screen and (min-width: 1280px) {
     margin-right: 15px;
     margin-bottom: 56px;
-    padding: 15px 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 40px;
 
     font-size: 14px;
     line-height: 1.28;
@@ -245,7 +247,7 @@
 
   &:hover,
   &:focus {
-    background-color: #ECEBEB;
+    background-color: #ecebeb;
   }
 }
 
