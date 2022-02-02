@@ -9,13 +9,13 @@
   pointer-events: none;
 
   transform: translateX(254px);
-  transition: transform 1s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
 
 .mobile-menu.is-open {
   pointer-events: auto;
   transform: translateX(0);
-  transition: transform 1s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
 
 .mobile-menu__container {
