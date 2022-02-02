@@ -91,6 +91,9 @@
     border-radius: 22px;
     transition: background-color 250ms var(--timing-function);
 
+    &.is-open {
+      display: none;
+    }
     @media screen and(min-width: 1280px) {
       margin: 0 auto;
     }
