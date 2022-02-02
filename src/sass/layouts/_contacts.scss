@@ -1,31 +1,26 @@
 .contacts__section {
   position: relative;
 
-  @media screen and (max-width:$mobile) {
-    background-image: linear-gradient(to bottom, #fff, #fff 5%, #FFF5F6 5%, #FFF5F6);
+  @media screen and (max-width: $mobile) {
+    background-image: linear-gradient(to bottom, #fff, #fff 5%, #fff5f6 5%, #fff5f6);
   }
 
-  @media screen and (min-width:768px) {
-    background-image: linear-gradient(to bottom, #fff, #fff 12%, #FFF5F6 12%, #FFF5F6);
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to bottom, #fff, #fff 12%, #fff5f6 12%, #fff5f6);
   }
 
-  @media screen and (min-width:$desktop) {
-
-    @media (min-device-pixel-ratio: 1),
-    (min-resolution: 96dpi),
-    (min-resolution: 1dppx) {
+  @media screen and (min-width: $desktop) {
+    @media (min-device-pixel-ratio: 1), (min-resolution: 96dpi), (min-resolution: 1dppx) {
       background-image: url('../images/desktop/сontacts_bcg_dt_1280@1x.png'),
-        linear-gradient(to bottom, #fff, #fff 14%, #FFF5F6 14%, #FFF5F6);
+        linear-gradient(to bottom, #fff, #fff 14%, #fff5f6 14%, #fff5f6);
       background-repeat: no-repeat;
       background-position: left;
       background-size: contain;
     }
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/desktop/сontacts_bcg_dt_1280@2x.png'),
-        linear-gradient(to bottom, #fff, #fff 14%, #FFF5F6 14%, #FFF5F6);
+        linear-gradient(to bottom, #fff, #fff 14%, #fff5f6 14%, #fff5f6);
       background-repeat: no-repeat;
       background-position: left;
       background-size: contain;
@@ -217,7 +212,6 @@
   text-decoration: none;
   transition: color 250ms var(--timing-function);
 
-
   &:hover,
   &:focus {
     color: #d41443;
@@ -275,7 +269,7 @@
 
   &:hover,
   &:focus {
-    background-color: #ECEBEB;
+    background-color: #ecebeb;
   }
 
   &--red-bcg {
@@ -298,6 +292,5 @@
 
   &--white {
     fill: #fff;
-
   }
 }
