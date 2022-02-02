@@ -232,16 +232,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 16px;
-  height: 16px;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
 
   border-radius: 50%;
   background-color: #ffffff;
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: #ECEBEB;
+  }
 }
 
 .hero__icon-arrow {
-  width: 6px;
-  height: 6px;
+  fill: var(--main-color);
 }
 
 .hero__ice-logo {
