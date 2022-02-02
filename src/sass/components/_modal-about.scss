@@ -94,19 +94,19 @@
     fill: #d41443;
   }
 
-  .about__close-button:focus-within>& {
+  .about__close-button:focus-within > & {
     fill: #d41443;
   }
 }
 
 .about__modal-title {
   text-align: center;
-  font-size: 3.2vw;
 }
 
 .about__modal-text {
   margin-bottom: 10px;
   margin-top: 20px;
+  padding: 0;
 }
 
 .about__modal-description {
